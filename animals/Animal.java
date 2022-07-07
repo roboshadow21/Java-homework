@@ -7,6 +7,12 @@ public abstract class Animal implements Actions {
         this.breed = breed;
         this.nickname = nick;
     }
+//    public Animal(String breed) {
+//        this(breed, "");
+//    }
+    public String getNick() {
+        return String.format("%s", this.nickname);
+    }
 
     public String getInfo() {
         return String.format("%s, breed - %s, nickname - %s", this.getClass().getSimpleName(),
