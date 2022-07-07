@@ -1,6 +1,6 @@
 package animals;
 
-public interface Movements {
+public interface Actions {
     void move();
     void play();
     void getVoice();
