@@ -16,8 +16,8 @@ public class Owner {
     String getFullName() {
         return String.format("%s %s", this.firstName, this.lastName);
     }
-    void setFullName(String fName, String lName) {
-        this.firstName = fName;
-        this.lastName = lName;
+    protected void setFullName(String name, String surname) {
+        this.firstName = name;
+        this.lastName = surname;
     }
 }

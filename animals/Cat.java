@@ -2,8 +2,8 @@ package animals;
 
 public class Cat extends Animal implements Actions {
 
-    public Cat(String breed, String nick) {
-        super(breed, nick);
+    public Cat() {
+        super();
     }
 
     @Override
