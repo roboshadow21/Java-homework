@@ -9,6 +9,11 @@ public class Program {
         System.out.println(host.getFullName());
         System.out.println(cat.getNick());
         System.out.println(cat.getInfo());
+//        host.call(cat.getNick());
+        host.playWithPet(cat.getNick());
+        System.out.println();
+        cat.play();
+//        cat.play();
 //        cat.move();
 //        System.out.println();
 //        System.out.println(cat.sleep());

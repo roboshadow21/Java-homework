@@ -1,5 +1,7 @@
 package animals;
 
+import java.util.Objects;
+
 public class Owner {
     String firstName;
     String lastName;
@@ -20,4 +22,12 @@ public class Owner {
         this.firstName = name;
         this.lastName = surname;
     }
+    public void call(String nick) {
+        System.out.printf("%s come to me", nick);
+    }
+    public void playWithPet(String nick) {
+        System.out.printf("Throwing the toy to %s", nick);
+
+    }
+
 }
