@@ -1,6 +1,6 @@
 package animals;
 
-public class Cat extends Animal implements Actions {
+public class Cat extends Animal {
 
     public Cat() {
         super();
@@ -20,4 +20,12 @@ public class Cat extends Animal implements Actions {
     public void getVoice() {
         System.out.printf("%s meows", nickname);
     }
+
+    @Override
+    public void sleep() { System.out.printf("%s sleeping", this.nickname); }
+
+    @Override
+    public void eat() { System.out.printf("%s eats food", this.nickname); }
+
+
 }

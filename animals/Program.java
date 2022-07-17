@@ -6,20 +6,12 @@ public class Program {
         cat.setInfo("russian longhair", "Murka");
         Owner host = new Owner();
         host.setFullName("John", "Doe");
-        System.out.println(host.getFullName());
-        System.out.println(cat.getNick());
-        System.out.println(cat.getInfo());
-//        host.call(cat.getNick());
-        host.playWithPet(cat.getNick());
+        Controller c = new Controller();
+        c.Call(host, cat);
         System.out.println();
-        cat.play();
-//        cat.play();
-//        cat.move();
-//        System.out.println();
-//        System.out.println(cat.sleep());
-//        cat.play();
-//        System.out.println();
-//        System.out.println(cat.eat());
-//        cat.getVoice();
+        c.Feed(host,cat);
+        System.out.println();
+        c.Play(host, cat);
+
     }
 }
